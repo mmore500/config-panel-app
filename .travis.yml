@@ -13,7 +13,7 @@ install:
 - sudo apt-get install -qq g++-8
 - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 90
 - git clone https://github.com/emilydolson/Empirical ../Empirical -b memic_merge
-- git clone https://github.com/emscripten-core/emsdk.git && cd emsdk && git pull && ./emsdk install latest && ./emsdk activate latest && . ./emsdk_env.sh && cd ..
+- git clone https://github.com/emscripten-core/emsdk.git && cd emsdk && git pull && ./emsdk install 1.38.48 && ./emsdk activate 1.38.48 && . ./emsdk_env.sh && cd ..
 
 script:
 - make test
