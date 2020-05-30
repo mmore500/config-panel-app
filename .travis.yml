@@ -28,3 +28,6 @@ after_success:
 - git add .
 - git commit --message "Travis build ${TRAVIS_BUILD_NUMBER}"
 - test ${TRAVIS_BRANCH} = "master" && git push --force --quiet origin gh-pages
+env:
+  global:
+    secure: x/hVsId4l6X/ytnOpC4so/kaOFTvIFzmww3UrTQrrH9PgYaYTihrWjCi+VMPQpTmAC0NU+snMt1rFOP0f/DXMt90YfxM3XtJ3OWp8k36TEJCg85s5PDTaWn12HOTZkWH2Ln8cdHwJdJfcM1a920o5U4JgSp4HH20KvA6fz5RK4ZO0TLai8CbaJNf1/44EXwID0NqgjR+asrlaAPOhEG+1Zxgp2CXecL3GTBxJoL7JcVrjtwoJrOYjfq2VD8eGb3E4HNco350JqWnI401WOxT/1t2fRu1AHJ8giLFw53oUkixXc2NGju2aG147p78G5QB3mqsO7T3+nBZKDTf4UO6d90u/6ypcwZS9CtvnnV34h3rcA9M9bSmU4FUgnhhrPezB/a7FlmowEQ7veSktBiMEjNbxzNRM7EctzHGrTIj86ljpFetyjhDY3N3MVMMkv2Sg4pMq6PxALiqesFTxrvTtygAhnwDc/FFSksfIx1/TkoXcsWlPP7LoaqBEpUFZi+xIaDs+nVFrte4TqOpkLl12Xj4MO/3tBv7dyIdMJ28H4KKK6iiyb52pKzyAiupFzfCU3vA5Lo4PWMBwEM5TDEY4gvGibusHCuWAXrJWVPCnXptLVJWCHkBj8M79eoneKiPplnIUmqabBLX0Y2SqYAnCkF1Jo69OIJ7EPmYFWqYVDI=
