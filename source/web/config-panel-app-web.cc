@@ -6,7 +6,7 @@
 
 #include "config/command_line.h"
 #include "config/ArgManager.h"
-#include "config/config_web_interface.h"
+#include "prefab/ConfigPanel.h"
 #include "web/web.h"
 #include "web/UrlParams.h"
 
@@ -18,7 +18,7 @@ UI::Document doc("emp_base");
 
 Config cfg;
 
-emp::ConfigWebUI config_panel(cfg);
+emp::ConfigPanel config_panel(cfg);
 
 int main()
 {
