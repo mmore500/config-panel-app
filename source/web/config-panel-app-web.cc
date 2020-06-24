@@ -11,6 +11,7 @@
 #include "web/UrlParams.h"
 
 #include "../Config.h"
+#include "web/Div.h"
 
 namespace UI = emp::web;
 
@@ -18,7 +19,7 @@ UI::Document doc("emp_base");
 
 Config cfg;
 
-emp::ConfigPanel config_panel(cfg);
+emp::prefab::ConfigPanel config_panel(cfg);
 
 int main()
 {
@@ -30,14 +31,14 @@ int main()
   if (am.HasUnused()) std::exit(EXIT_FAILURE);
 
   // log configuraiton settings
-  std::cout << "==============================" << std::endl;
-  std::cout << "|    How am I configured?    |" << std::endl;
-  std::cout << "==============================" << std::endl;
-  cfg.Write(std::cout);
-  std::cout << "==============================\n" << std::endl;
+  // std::cout << "==============================" << std::endl;
+  // std::cout << "|    How am I configured?    |" << std::endl;
+  // std::cout << "==============================" << std::endl;
+  // cfg.Write(std::cout);
+  // std::cout << "==============================\n" << std::endl;
 
   // setup configuration panel
   config_panel.Setup();
   doc << config_panel.GetDiv();
-
+  
 }
