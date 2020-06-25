@@ -40,5 +40,7 @@ int main()
   // setup configuration panel
   config_panel.Setup();
   doc << config_panel.GetDiv();
-  
+
+  std::cout << "end of main... !" << std::endl;
+
 }
