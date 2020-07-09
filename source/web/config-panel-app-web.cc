@@ -9,6 +9,7 @@
 #include "prefab/ConfigPanel.h"
 #include "web/web.h"
 #include "web/UrlParams.h"
+#include "prefab/LoadingModal.h"
 
 #include "../Config.h"
 #include "web/Div.h"
@@ -42,5 +43,5 @@ int main()
   doc << config_panel.GetDiv();
 
   std::cout << "end of main... !" << std::endl;
-
+  emp::prefab::CloseLoadingModal();
 }
